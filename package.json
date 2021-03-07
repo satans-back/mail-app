@@ -3,8 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "test": "echo \"Eror: no test specified\" && exit 1"
+    "start": "cross-env NODE_ENV=production node bin/www",
+    "test": "cross-env NODE_ENV=development jest",
+    "start:dev": "cross-env NODE_ENV=development node bin/www",
+    "start:pro": "npm start",
+    "start:watch": "nodemon cross-env NODE_ENV=development bin/www"
   },
   "dependencies": {
     "bootstrap-icons": "^1.4.0",

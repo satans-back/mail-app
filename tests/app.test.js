@@ -6,7 +6,6 @@ describe('Test the root path', () => {
        try {
            const resp = await request(app).get('/');
            expect(resp.statusCode).toBe(200);
-           expect(resp.text).toBe('Helllo world!');
        } catch(e) {
            throw e;
        }
