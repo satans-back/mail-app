@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_ENV=production node bin/www",
-    "test": "cross-env NODE_ENV=development jest",
+    "start": "node bin/www",
+    "test": "cross-env NODE_ENV=developmentgit  jest",
     "start:dev": "cross-env NODE_ENV=development node bin/www",
     "start:pro": "npm start",
     "start:watch": "nodemon cross-env NODE_ENV=development bin/www"
